@@ -1,0 +1,78 @@
+﻿<Window x:Class="DeSzyfroINATOR.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeSzyfroINATOR"
+        mc:Ignorable="d"
+        Title="DeSzyfroINATOR" Height="825" Width="1000" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="White"/>
+            <GradientStop Color="#FFCBCBCB" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <TextBox x:Name="Ramka1" HorizontalAlignment="Left" Margin="53,28,0,0" TextWrapping="NoWrap" Text="Ramka Pierwsza" VerticalAlignment="Top" Width="120" Background="red" TextChanged="Ramka1_TextChanged"/>
+        <TextBox x:Name="Ramka2" HorizontalAlignment="Left" Margin="691,28,0,0" TextWrapping="NoWrap" Text="Ramka Druga" VerticalAlignment="Top" Width="120" Background="red" TextChanged="Ramka2_TextChanged"/>
+
+        <TextBlock Text="ID:" Height="19" Width="54" Margin="187,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Funkcja:" Height="19" Width="54" Margin="187,42,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Rejestry:" Height="19" Width="54" Margin="187,64,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock x:Name="ID1" HorizontalAlignment="Left" Margin="244,20,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Height="19" Width="54" Background="#FFCCE2FF" />
+        <TextBlock x:Name="F1" HorizontalAlignment="Left" Margin="244,42,0,0" TextWrapping="Wrap" Text="Funkcja" VerticalAlignment="Top" Height="19" Width="54" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Rej1" HorizontalAlignment="Left" Margin="244,64,0,0" TextWrapping="Wrap" Text="Rejestry" VerticalAlignment="Top" Height="19" Width="54" Background="#FFCCE2FF" />
+
+        <TextBlock Text="Blok1:" Height="19" Width="54" Margin="50,122,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Blok2:" Height="19" Width="54" Margin="157,122,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Blok3:" Height="19" Width="54" Margin="264,122,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Blok4:" Height="19" Width="54" Margin="369,122,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Blok5:" Height="19" Width="54" Margin="50,340,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Blok6:" Height="19" Width="54" Margin="158,340,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Blok7:" Height="19" Width="54" Margin="264,340,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Blok8:" Height="19" Width="54" Margin="369,340,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Blok9:" Height="19" Width="54" Margin="50,556,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        
+        <TextBlock Text="CRC:" Margin="223,624,0,0" FontSize="20" FontWeight="Bold" Foreground="#FFBD0505" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock x:Name="Blok11" HorizontalAlignment="Left" Margin="50,142,0,0" TextWrapping="Wrap" Text="Blok1" VerticalAlignment="Top" Height="190" Width="97" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Blok12" HorizontalAlignment="Left" Margin="158,142,0,0" TextWrapping="Wrap" Text="Blok2" VerticalAlignment="Top" Height="190" Width="97" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Blok13" HorizontalAlignment="Left" Margin="264,142,0,0" TextWrapping="Wrap" Text="Blok3" VerticalAlignment="Top" Height="190" Width="97" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Blok14" HorizontalAlignment="Left" Margin="369,142,0,0" TextWrapping="Wrap" Text="Blok4" VerticalAlignment="Top" Height="190" Width="97" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Blok15" HorizontalAlignment="Left" Margin="50,360,0,0" TextWrapping="Wrap" Text="Blok5" VerticalAlignment="Top" Height="190" Width="97" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Blok16" HorizontalAlignment="Left" Margin="158,360,0,0" TextWrapping="Wrap" Text="Blok6" VerticalAlignment="Top" Height="190" Width="97" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Blok17" HorizontalAlignment="Left" Margin="264,360,0,0" TextWrapping="Wrap" Text="Blok7" VerticalAlignment="Top" Height="190" Width="97" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Blok18" HorizontalAlignment="Left" Margin="369,360,0,0" TextWrapping="Wrap" Text="Blok8" VerticalAlignment="Top" Height="190" Width="97" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Blok19" HorizontalAlignment="Left" Margin="50,576,0,0" TextWrapping="Wrap" Text="Blok9" VerticalAlignment="Top" Height="190" Width="97" Background="#FFCCE2FF" />
+        <TextBlock x:Name="CRC1" HorizontalAlignment="Left" Margin="223,658,0,0" TextWrapping="Wrap" Text="CRC" VerticalAlignment="Top" Height="18" Width="75" FontSize="14" FontStyle="Italic" Background="#FFFFC386" />
+
+
+        <TextBlock Text="ID:" Height="19" Width="54" Margin="852,18,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Funkcja:" Height="19" Width="54" Margin="852,38,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Rejestry:" Height="19" Width="54" Margin="852,58,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock x:Name="ID2" HorizontalAlignment="Left" Margin="906,18,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Height="19" Width="54" Background="#FFCCE2FF" />
+        <TextBlock x:Name="F2" HorizontalAlignment="Left" Margin="906,38,0,0" TextWrapping="Wrap" Text="Funkcja" VerticalAlignment="Top" Height="19" Width="54" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Rej2" HorizontalAlignment="Left" Margin="906,58,0,0" TextWrapping="Wrap" Text="Rejestry" VerticalAlignment="Top" Height="19" Width="54" Background="#FFCCE2FF" />
+        
+        <TextBlock Text="Blok1:" Height="19" Width="54" Margin="534,122,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Blok2:" Height="19" Width="54" Margin="642,122,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Blok3:" Height="19" Width="54" Margin="751,122,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Blok4:" Height="19" Width="54" Margin="856,122,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Blok5:" Height="19" Width="54" Margin="534,340,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Blok6:" Height="19" Width="54" Margin="642,340,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Blok7:" Height="19" Width="54" Margin="751,340,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Blok8:" Height="19" Width="54" Margin="856,340,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Text="Blok9:" Height="19" Width="54" Margin="534,556,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        
+        <TextBlock Text="CRC:" Margin="707,624,0,0" FontSize="20" FontWeight="Bold" Foreground="#FFBD0505" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock x:Name="Blok21" HorizontalAlignment="Left" Margin="534,142,0,0" TextWrapping="Wrap" Text="Blok1" VerticalAlignment="Top" Height="190" Width="98" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Blok22" HorizontalAlignment="Left" Margin="642,142,0,0" TextWrapping="Wrap" Text="Blok2" VerticalAlignment="Top" Height="190" Width="98" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Blok23" HorizontalAlignment="Left" Margin="752,142,0,0" TextWrapping="Wrap" Text="Blok3" VerticalAlignment="Top" Height="190" Width="97" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Blok24" HorizontalAlignment="Left" Margin="857,142,0,0" TextWrapping="Wrap" Text="Blok4" VerticalAlignment="Top" Height="190" Width="97" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Blok25" HorizontalAlignment="Left" Margin="534,360,0,0" TextWrapping="Wrap" Text="Blok5" VerticalAlignment="Top" Height="190" Width="98" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Blok26" HorizontalAlignment="Left" Margin="642,360,0,0" TextWrapping="Wrap" Text="Blok6" VerticalAlignment="Top" Height="190" Width="98" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Blok27" HorizontalAlignment="Left" Margin="752,360,0,0" TextWrapping="Wrap" Text="Blok7" VerticalAlignment="Top" Height="190" Width="97" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Blok28" HorizontalAlignment="Left" Margin="857,360,0,0" TextWrapping="Wrap" Text="Blok8" VerticalAlignment="Top" Height="190" Width="97" Background="#FFCCE2FF" />
+        <TextBlock x:Name="Blok29" HorizontalAlignment="Left" Margin="534,576,0,0" TextWrapping="Wrap" Text="Blok9" VerticalAlignment="Top" Height="190" Width="98" Background="#FFCCE2FF" />
+        <TextBlock x:Name="CRC2" HorizontalAlignment="Left" Margin="708,658,0,0" TextWrapping="Wrap" Text="CRC" VerticalAlignment="Top" Height="18" Width="74" FontSize="14" FontStyle="Italic" Background="#FFFFC386" />
+    </Grid>
+</Window>
